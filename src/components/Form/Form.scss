@@ -1,0 +1,32 @@
+.form {
+	display: grid;
+	grid-template: 40px / 8fr 2fr;
+	column-gap: 30px;
+  // .form__input
+  &__input {
+		padding: 0px 20px;
+		border-radius: 10px;
+		background: royalblue;
+		color: #fff;
+		transition: all 0.5s ease 0s;
+		border: 3px solid transparent;
+		&::placeholder {
+			color: rgb(190, 190, 190);
+		}
+		&._invalid {
+			border-color: red;
+		}
+  }
+  // .form__button
+  &__button {
+		border-radius: 10px;
+		transition: all 0.5s ease 0s;
+		background: rgb(43, 43, 194);
+		color: #fff;
+		@media (min-width: 991.98px) {
+			&:hover {
+				background: rgb(26, 26, 165);
+			}
+		}
+  }
+}

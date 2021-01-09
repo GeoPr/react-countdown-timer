@@ -1,0 +1,24 @@
+.timer {
+  margin: 30px 0px 0px 0px;
+  display: grid;
+	grid-template: 200px / repeat(4, 200px);
+	column-gap: 30px;
+	justify-content: center;
+  // .timer__time
+  &__time {
+		width: 100%;
+		background: #eee;
+		border-radius: 50%;
+		font-size: 3.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		span {
+			padding: 10px 0px 0px 0px;
+			font-size: 40%;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+  }
+}
